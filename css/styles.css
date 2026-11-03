@@ -1,0 +1,396 @@
+/* ===================================================================
+   VARDHMAN IRON PRODUCTS - PREMIUM INDUSTRIAL WEB SUITE
+   Brand Identity: वर्धमान (Vardhman) • Bina (M.P.) • +91 9425424932
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg-primary: #070d18;
+  --bg-secondary: #0c172a;
+  --bg-card: #112038;
+  --bg-card-hover: #172c4e;
+  --accent-blue: #0284c7;
+  --accent-cyan: #38bdf8;
+  --accent-red: #dc2626;
+  --accent-gold: #f59e0b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: #1e3a5f;
+  --sticker-gold: linear-gradient(135deg, #fffbeb 0%, #fef08a 25%, #eab308 50%, #ca8a04 75%, #fef08a 100%);
+  --sticker-red: linear-gradient(135deg, #7f1d1d 0%, #dc2626 50%, #991b1b 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Noto Sans Devanagari', 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-family: 'Noto Sans Devanagari', 'Outfit', 'Segoe UI', sans-serif;
+}
+
+/* ================= PREVENT HINDI DEVANAGARI MATRA CLIPPING ================= */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.35 !important;
+  letter-spacing: normal !important;
+}
+
+/* Hero Title Specific Spacing */
+.hero-main-title {
+  line-height: 1.38 !important;
+  padding: 10px 0;
+}
+
+.hero-line-1 {
+  color: #ffffff;
+  display: block;
+  padding: 6px 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-line-2 {
+  color: #f59e0b;
+  display: block;
+  padding: 6px 0;
+  text-shadow: 0 0 30px rgba(245, 158, 11, 0.5), 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-line-3 {
+  color: #38bdf8;
+  display: block;
+  padding: 6px 0;
+  text-shadow: 0 0 30px rgba(56, 189, 248, 0.5), 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* ================= CUSTOM SCROLLBAR ================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #070d18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* ================= TYPOGRAPHY HELPERS ================= */
+.font-hindi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.font-mono-num {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* ================= VARDHMAN BRAND STICKER BADGE ================= */
+.vardhman-sticker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sticker-red);
+  border: 2px solid #fef08a;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4), inset 0 0 10px rgba(254, 240, 138, 0.4);
+  padding: 4px 12px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 800;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vardhman-sticker-badge::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  transform: rotate(30deg);
+  animation: stickerSheen 4s infinite linear;
+}
+
+@keyframes stickerSheen {
+  0% { left: -60%; }
+  30% { left: 140%; }
+  100% { left: 140%; }
+}
+
+/* Product Card Overlay Sticker */
+.product-card-sticker {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(127, 29, 29, 0.95);
+  border: 1.5px solid #fde047;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card-sticker:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(234, 179, 8, 0.5);
+}
+
+.sticker-seal-dot {
+  width: 10px;
+  height: 10px;
+  background: #fde047;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fde047;
+}
+
+/* ================= 3D EXPLODED VIEW CONTAINER ================= */
+.cad-blueprint-wrapper {
+  background: radial-gradient(circle at center, #0f2347 0%, #070d18 70%);
+  border: 1px solid #1e3a5f;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 40px rgba(2, 132, 199, 0.15);
+}
+
+.cad-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Range Slider Styling */
+.explosion-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #1e3a5f;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.explosion-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #0284c7;
+  border: 3px solid #f8fafc;
+  cursor: pointer;
+  box-shadow: 0 0 15px #38bdf8;
+  transition: transform 0.15s ease;
+}
+
+.explosion-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Interactive Component Hotspot Markers */
+.hotspot-node {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #dc2626;
+  border: 2.5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.8);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s;
+  z-index: 20;
+}
+
+.hotspot-node::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #dc2626;
+  animation: pulseRipple 1.8s infinite ease-out;
+}
+
+.hotspot-node:hover, .hotspot-node.active {
+  transform: scale(1.3);
+  background: #0284c7;
+  border-color: #fde047;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+@keyframes pulseRipple {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* ================= PRODUCT CARD GLOW & HOVER ================= */
+.product-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 15px 35px rgba(2, 132, 199, 0.2);
+  background: var(--bg-card-hover);
+}
+
+.product-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  background: #070d18;
+}
+
+.product-img-wrapper img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .product-img-wrapper img {
+  transform: scale(1.08);
+}
+
+/* ================= FLOATING WHATSAPP & CALL BAR ================= */
+.quick-action-fab {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fab-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fab-btn:hover {
+  transform: scale(1.12);
+}
+
+.fab-whatsapp {
+  background: #25d366;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.fab-call {
+  background: #dc2626;
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
+}
+
+/* ================= GLOW ACCENTS ================= */
+.glow-cyan-text {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+.glow-gold-text {
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary-glow {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-primary-glow:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp-glow {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #ffffff;
+  border: 1px solid #4ade80;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-whatsapp-glow:hover {
+  box-shadow: 0 6px 25px rgba(74, 222, 128, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ================= MODAL ================= */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content-box {
+  background: #0d1a2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-backdrop.open .modal-content-box {
+  transform: scale(1);
+}

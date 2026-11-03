@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240" width="100%" height="100%">
+  <defs>
+    <!-- Hologram & Metallic Foil Gradients -->
+    <linearGradient id="goldPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="60%" stop-color="#ca8a04"/>
+      <stop offset="80%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="royalRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="40%" stop-color="#dc2626"/>
+      <stop offset="70%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="hologramShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="25%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.3"/>
+      <stop offset="75%" stop-color="#eab308" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="stickerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#stickerShadow)">
+    <!-- Outer Sticker Beveled Plate -->
+    <rect x="10" y="10" width="480" height="220" rx="18" fill="url(#goldPlate)" stroke="#78350f" stroke-width="2"/>
+    <!-- Security Guilloche Border -->
+    <rect x="18" y="18" width="464" height="204" rx="14" fill="#0f172a" stroke="url(#goldPlate)" stroke-width="2"/>
+    
+    <!-- Red Inner Emblem Container -->
+    <rect x="24" y="24" width="452" height="192" rx="10" fill="url(#royalRed)" stroke="#fef08a" stroke-width="1.5"/>
+
+    <!-- Holographic Rainbow Foil Layer -->
+    <rect x="24" y="24" width="452" height="192" rx="10" fill="url(#hologramShine)"/>
+
+    <!-- Corner Rivets -->
+    <circle cx="34" cy="34" r="4" fill="url(#goldPlate)" stroke="#78350f" stroke-width="1"/>
+    <circle cx="466" cy="34" r="4" fill="url(#goldPlate)" stroke="#78350f" stroke-width="1"/>
+    <circle cx="34" cy="206" r="4" fill="url(#goldPlate)" stroke="#78350f" stroke-width="1"/>
+    <circle cx="466" cy="206" r="4" fill="url(#goldPlate)" stroke="#78350f" stroke-width="1"/>
+
+    <!-- Top Ribbon / Certified Banner -->
+    <g transform="translate(250, 48)">
+      <rect x="-170" y="-14" width="340" height="22" rx="11" fill="#0f172a" stroke="url(#goldPlate)" stroke-width="1"/>
+      <text x="0" y="2" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="900" fill="#fef08a" text-anchor="middle" letter-spacing="2">
+        ★ ORIGINAL FACTORY PRODUCT • 100% QUALITY TESTED ★
+      </text>
+    </g>
+
+    <!-- Main Brand Name in Devanagari & English -->
+    <text x="250" y="115" font-family="'Segoe UI', 'Noto Sans Devanagari', Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));">
+      वर्धमान
+    </text>
+    <text x="250" y="142" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#fef08a" text-anchor="middle" letter-spacing="4" style="text-transform: uppercase;">
+      VARDHMAN IRON PRODUCTS
+    </text>
+
+    <!-- Subtitle / Categories -->
+    <text x="250" y="162" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#fecaca" text-anchor="middle">
+      घरेलू आटा चक्की • हेवी कूलर • स्टील अलमारी • फर्नीचर
+    </text>
+
+    <!-- Bottom Verification Band -->
+    <g transform="translate(250, 192)">
+      <rect x="-210" y="-14" width="420" height="24" rx="4" fill="#0b0f19" stroke="url(#goldPlate)" stroke-width="1"/>
+      <!-- Factory Location & Phone -->
+      <text x="-195" y="3" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
+        📍 नई बस्ती, बीना (म.प्र.)
+      </text>
+      <text x="70" y="3" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#fef08a">
+        📞 मो.: 9425424932
+      </text>
+      <!-- Small Hologram Stamp Badge on the right -->
+      <circle cx="185" cy="-2" r="10" fill="url(#goldPlate)" stroke="#78350f" stroke-width="0.8"/>
+      <text x="185" y="1" font-family="sans-serif" font-size="6" font-weight="900" fill="#000" text-anchor="middle">VIP</text>
+    </g>
+  </g>
+</svg>

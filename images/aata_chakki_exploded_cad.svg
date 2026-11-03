@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="100%" height="100%" style="background:#070d19; font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Grids & Patterns -->
+    <pattern id="cadGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="0.8"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#1a355f" stroke-width="1.2"/>
+    </pattern>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0055ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#070d19" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Metallic Gradients -->
+    <linearGradient id="metalSS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e8f5"/>
+      <stop offset="35%" stop-color="#9bb0cc"/>
+      <stop offset="65%" stop-color="#ccd8e8"/>
+      <stop offset="100%" stop-color="#60728c"/>
+    </linearGradient>
+    <linearGradient id="copperMotor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b85d19"/>
+      <stop offset="40%" stop-color="#f28e2b"/>
+      <stop offset="70%" stop-color="#e1701a"/>
+      <stop offset="100%" stop-color="#80380a"/>
+    </linearGradient>
+    <linearGradient id="powderCoat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="50%" stop-color="#0f2137"/>
+      <stop offset="100%" stop-color="#091424"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <!-- Drop Shadows & Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1400" height="1000" fill="#070d19"/>
+  <rect width="1400" height="1000" fill="url(#cadGrid)"/>
+  <circle cx="700" cy="500" r="550" fill="url(#centerGlow)"/>
+
+  <!-- Blueprint Title & Border -->
+  <rect x="30" y="30" width="1340" height="940" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="10 5" opacity="0.4"/>
+  <rect x="40" y="40" width="1320" height="920" fill="none" stroke="#1a355f" stroke-width="1"/>
+  
+  <!-- Header Block -->
+  <g transform="translate(60, 75)">
+    <rect x="0" y="0" width="480" height="70" rx="6" fill="#0b172a" stroke="#00f2fe" stroke-width="1.2" opacity="0.95"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#00f2fe" letter-spacing="2">VARDHMAN IRON PRODUCTS • BINA (M.P.)</text>
+    <text x="20" y="52" font-size="20" font-weight="900" fill="#ffffff">घरेलू आटा चक्की : 3D CAD EXPLODED VIEW</text>
+  </g>
+  
+  <g transform="translate(940, 75)">
+    <rect x="0" y="0" width="400" height="70" rx="6" fill="#0b172a" stroke="#1a355f" stroke-width="1.2"/>
+    <text x="20" y="28" font-size="12" fill="#8baac9">ENGINEERING SCHEMATIC : VIP-AC-2026</text>
+    <text x="20" y="50" font-size="15" font-weight="bold" fill="#f59e0b">100% COPPER MOTOR • SS 304 CHAMBER</text>
+  </g>
+
+  <!-- Central Vertical Exploded Axis (Dotted Line) -->
+  <line x1="700" y1="140" x2="700" y2="880" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.6"/>
+
+  <!-- ================= PART 1: HOPPER LID & SS GRAIN HOPPER (Top) ================= -->
+  <g transform="translate(700, 150)" filter="url(#dropShadow)">
+    <!-- Exploded Guide Line to Left -->
+    <path d="M 0 0 L -180 -10 L -250 -10" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="-250" cy="-10" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="-250" y="-5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">1</text>
+    
+    <!-- Callout Box -->
+    <rect x="-560" y="-35" width="290" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="-545" y="-17" font-size="14" font-weight="bold" fill="#ffffff">SS 304 Grain Hopper &amp; Lid</text>
+    <text x="-545" y="2" font-size="11" fill="#8baac9">स्टेनलेस स्टील अनाज हॉपर (4.5 KG क्षमता)</text>
+
+    <!-- Component Render -->
+    <!-- Hopper Top Rim -->
+    <ellipse cx="0" cy="0" rx="140" ry="32" fill="url(#metalSS)" stroke="#ffffff" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="125" ry="26" fill="#304156" stroke="#506680" stroke-width="1"/>
+    <!-- Hopper Cone Body -->
+    <path d="M -140 0 L -45 65 L 45 65 L 140 0 Z" fill="url(#metalSS)" stroke="#7e9bbd" stroke-width="1.5"/>
+    <ellipse cx="0" cy="65" rx="45" ry="12" fill="#1b2838" stroke="#00f2fe" stroke-width="1.2"/>
+    <!-- View Window on Hopper -->
+    <rect x="-25" y="15" width="50" height="30" rx="4" fill="#00f2fe" fill-opacity="0.25" stroke="#00f2fe" stroke-width="1"/>
+    <text x="0" y="34" font-size="9" fill="#00f2fe" text-anchor="middle" font-weight="bold">GRAIN LEVEL</text>
+  </g>
+
+  <!-- ================= PART 2: AUTO-FEED VALVE & SENSOR ================= -->
+  <g transform="translate(700, 260)" filter="url(#dropShadow)">
+    <!-- Exploded Guide Line to Right -->
+    <path d="M 0 0 L 160 0 L 220 0" stroke="#f59e0b" stroke-width="1.2" fill="none"/>
+    <circle cx="220" cy="0" r="14" fill="#0b172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="220" y="5" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">2</text>
+    
+    <!-- Callout Box -->
+    <rect x="250" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#f59e0b" stroke-width="1" opacity="0.95"/>
+    <text x="265" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Smart Auto-Feed Gate &amp; Sensor</text>
+    <text x="265" y="11" font-size="11" fill="#f59e0b">ऑटोमैटिक ग्रेन रेगुलेटर एवं सेफ्टी सेंसर</text>
+
+    <!-- Component Render -->
+    <rect x="-42" y="-12" width="84" height="24" rx="4" fill="#243b55" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M -25 -12 L -25 -25 L 25 -25 L 25 -12" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="#00f2fe" filter="url(#glowCyan)"/>
+  </g>
+
+  <!-- ================= PART 3: HEAVY-DUTY COPPER MOTOR ================= -->
+  <g transform="translate(700, 360)" filter="url(#dropShadow)">
+    <!-- Guide Line to Left -->
+    <path d="M -70 0 L -200 0 L -260 0" stroke="#f59e0b" stroke-width="1.2" fill="none"/>
+    <circle cx="-260" cy="0" r="14" fill="#0b172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="-260" y="5" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">3</text>
+    
+    <!-- Callout Box -->
+    <rect x="-580" y="-26" width="300" height="52" rx="4" fill="#0e1e36" stroke="#f59e0b" stroke-width="1" opacity="0.95"/>
+    <text x="-565" y="-8" font-size="14" font-weight="bold" fill="#ffffff">1.0 HP 100% Copper Winding Motor</text>
+    <text x="-565" y="11" font-size="11" fill="#f59e0b">2880 RPM हेवी कॉपर मोटर (लो-पॉवर कंजम्प्शन)</text>
+
+    <!-- Motor Render -->
+    <!-- Motor Housing -->
+    <rect x="-85" y="-35" width="170" height="70" rx="8" fill="url(#copperMotor)" stroke="#e07d20" stroke-width="1.5"/>
+    <!-- Cooling Fins -->
+    <line x1="-70" y1="-35" x2="-70" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="-50" y1="-35" x2="-50" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="-30" y1="-35" x2="-30" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="-10" y1="-35" x2="-10" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="10" y1="-35" x2="10" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="30" y1="-35" x2="30" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="50" y1="-35" x2="50" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <line x1="70" y1="-35" x2="70" y2="35" stroke="#5a2404" stroke-width="2"/>
+    <!-- Motor Shaft -->
+    <rect x="-12" y="35" width="24" height="25" fill="url(#metalSS)" stroke="#8da2ba" stroke-width="1"/>
+    <!-- Terminal Box -->
+    <rect x="-35" y="-48" width="70" height="15" rx="3" fill="#1b2838" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="0" y="-37" font-size="8" fill="#f59e0b" text-anchor="middle" font-weight="bold">100% COPPER</text>
+  </g>
+
+  <!-- ================= PART 4: SS 304 GRINDING CHAMBER & 6-CUTTER ROTOR ================= -->
+  <g transform="translate(700, 485)" filter="url(#dropShadow)">
+    <!-- Guide Line to Right -->
+    <path d="M 95 0 L 210 0 L 260 0" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="260" cy="0" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="260" y="5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">4</text>
+    
+    <!-- Callout Box -->
+    <rect x="290" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="305" y="-8" font-size="14" font-weight="bold" fill="#ffffff">SS 304 Grinding Chamber &amp; Rotor</text>
+    <text x="305" y="11" font-size="11" fill="#8baac9">6-ब्लेड कटर रोटर (बिना पत्थर ठंडी पिसाई)</text>
+
+    <!-- Grinding Chamber Outer Shell -->
+    <circle cx="0" cy="0" r="70" fill="#122033" stroke="url(#metalSS)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="56" fill="#0a121d" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <!-- 6-Cutter Rotor -->
+    <circle cx="0" cy="0" r="14" fill="url(#metalSS)" stroke="#ffffff" stroke-width="1"/>
+    <!-- 6 Cutter Blades -->
+    <g stroke="url(#metalSS)" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-12" x2="0" y2="-45"/>
+      <line x1="0" y1="12" x2="0" y2="45"/>
+      <line x1="-10" y1="-6" x2="-39" y2="-22"/>
+      <line x1="10" y1="6" x2="39" y2="22"/>
+      <line x1="-10" y1="6" x2="-39" y2="22"/>
+      <line x1="10" y1="-6" x2="39" y2="-22"/>
+    </g>
+    <!-- Center Bolt -->
+    <circle cx="0" cy="0" r="5" fill="#f59e0b"/>
+  </g>
+
+  <!-- ================= PART 5: INTERCHANGEABLE MICRO-SIEVES (JAALIS) ================= -->
+  <g transform="translate(700, 580)" filter="url(#dropShadow)">
+    <!-- Guide Line to Left -->
+    <path d="M -85 0 L -210 0 L -270 0" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">5</text>
+    
+    <!-- Callout Box -->
+    <rect x="-580" y="-26" width="290" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="-565" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Set of 7 Stainless Steel Sieves</text>
+    <text x="-565" y="11" font-size="11" fill="#8baac9">7 प्रकार की चलनी (बारीक से लेकर दलिया तक)</text>
+
+    <!-- Jaali Sieve Renders -->
+    <g transform="translate(-60, -10)">
+      <rect x="0" y="0" width="120" height="20" rx="3" fill="url(#metalSS)" stroke="#8da2ba" stroke-width="1"/>
+      <path d="M 15 10 L 105 10" stroke="#0b172a" stroke-width="3" stroke-dasharray="3 3"/>
+    </g>
+    <g transform="translate(-50, 5)">
+      <rect x="0" y="0" width="100" height="16" rx="3" fill="#cbd5e1" stroke="#8da2ba" stroke-width="0.8"/>
+      <path d="M 10 8 L 90 8" stroke="#0b172a" stroke-width="2" stroke-dasharray="2 2"/>
+    </g>
+  </g>
+
+  <!-- ================= PART 6: COLD-ROLLED STEEL BODY CABINET ================= -->
+  <g transform="translate(700, 685)" filter="url(#dropShadow)">
+    <!-- Guide Line to Right -->
+    <path d="M 115 0 L 230 0 L 290 0" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="290" cy="0" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="290" y="5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">6</text>
+    
+    <!-- Callout Box -->
+    <rect x="320" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="335" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Powder-Coated Steel Outer Cabinet</text>
+    <text x="335" y="11" font-size="11" fill="#8baac9">हेवी गेज कोल्ड-रोल्ड स्टील बॉडी (ध्वनिरोधी)</text>
+
+    <!-- Cabinet Render -->
+    <rect x="-105" y="-45" width="210" height="90" rx="10" fill="url(#powderCoat)" stroke="#00f2fe" stroke-width="2"/>
+    <!-- Digital Panel Mockup -->
+    <rect x="-50" y="-35" width="100" height="25" rx="4" fill="#06101d" stroke="#1f4068" stroke-width="1"/>
+    <circle cx="-30" cy="-22" r="4" fill="#10b981"/>
+    <text x="0" y="-19" font-size="11" font-weight="bold" fill="#00f2fe" text-anchor="middle">AUTO READY</text>
+    <!-- Handle -->
+    <rect x="-70" y="5" width="140" height="12" rx="6" fill="url(#metalSS)" stroke="#8da2ba" stroke-width="1"/>
+  </g>
+
+  <!-- ================= PART 7: FOOD-GRADE FLOUR COLLECTION CONTAINER ================= -->
+  <g transform="translate(700, 805)" filter="url(#dropShadow)">
+    <!-- Guide Line to Left -->
+    <path d="M -85 0 L -210 0 L -270 0" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">7</text>
+    
+    <!-- Callout Box -->
+    <rect x="-580" y="-26" width="290" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="-565" y="-8" font-size="14" font-weight="bold" fill="#ffffff">SS Flour Container &amp; Filter Ring</text>
+    <text x="-565" y="11" font-size="11" fill="#8baac9">खाद्य-ग्रेड आटा पात्र एवं धूल-रोधी रिंग</text>
+
+    <!-- Container Render -->
+    <ellipse cx="0" cy="-20" rx="75" ry="16" fill="url(#metalSS)" stroke="#ffffff" stroke-width="1"/>
+    <path d="M -75 -20 L -65 30 L 65 30 L 75 -20 Z" fill="url(#metalSS)" stroke="#7e9bbd" stroke-width="1.5"/>
+    <ellipse cx="0" cy="30" rx="65" ry="12" fill="#2d3f54" stroke="#7e9bbd" stroke-width="1"/>
+    <rect x="-70" y="-16" width="140" height="8" rx="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- ================= PART 8: 360 DEGREE CASTOR WHEEL BASE ================= -->
+  <g transform="translate(700, 895)" filter="url(#dropShadow)">
+    <!-- Guide Line to Right -->
+    <path d="M 85 0 L 210 0 L 270 0" stroke="#00f2fe" stroke-width="1.2" fill="none"/>
+    <circle cx="270" cy="0" r="14" fill="#0b172a" stroke="#00f2fe" stroke-width="2"/>
+    <text x="270" y="5" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">8</text>
+    
+    <!-- Callout Box -->
+    <rect x="300" y="-26" width="290" height="52" rx="4" fill="#0e1e36" stroke="#00f2fe" stroke-width="1" opacity="0.95"/>
+    <text x="315" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Heavy-Duty Caster Wheel Base</text>
+    <text x="315" y="11" font-size="11" fill="#8baac9">360° आसानी से चलायमान मजबूत पहिए</text>
+
+    <!-- Castor Base Render -->
+    <rect x="-90" y="-8" width="180" height="12" rx="3" fill="#1b2838" stroke="#486581" stroke-width="1.5"/>
+    <!-- Wheel Left -->
+    <g transform="translate(-70, 16)">
+      <circle cx="0" cy="0" r="12" fill="#0b172a" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="4" fill="#f59e0b"/>
+    </g>
+    <!-- Wheel Right -->
+    <g transform="translate(70, 16)">
+      <circle cx="0" cy="0" r="12" fill="#0b172a" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="4" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <!-- Bottom Technical Stamp & Specs -->
+  <g transform="translate(60, 910)">
+    <rect x="0" y="0" width="460" height="40" rx="4" fill="#0b172a" stroke="#1a355f" stroke-width="1"/>
+    <text x="15" y="25" font-size="12" fill="#00f2fe">PRECISION FABRICATION • FOOD GRADE SS 304 • ISO STANDARD</text>
+  </g>
+  <g transform="translate(900, 910)">
+    <rect x="0" y="0" width="440" height="40" rx="4" fill="#0b172a" stroke="#1a355f" stroke-width="1"/>
+    <text x="15" y="25" font-size="12" fill="#f59e0b">DIRECT INQUIRY &amp; ORDERS: +91 9425424932 (BINA, M.P.)</text>
+  </g>
+</svg>

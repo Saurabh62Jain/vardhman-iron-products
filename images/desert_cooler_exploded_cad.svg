@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="100%" height="100%" style="background:#070d19; font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Grids & Patterns -->
+    <pattern id="cadGridCooler" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="0.8"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#1a355f" stroke-width="1.2"/>
+    </pattern>
+    <radialGradient id="coolerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#070d19" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Metallic & Galvanized Gradients -->
+    <linearGradient id="giSheet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="25%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="coolerBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="padHoney" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="copperWinding" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b85d19"/>
+      <stop offset="40%" stop-color="#f28e2b"/>
+      <stop offset="70%" stop-color="#e1701a"/>
+      <stop offset="100%" stop-color="#80380a"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadowCooler" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1400" height="1000" fill="#070d19"/>
+  <rect width="1400" height="1000" fill="url(#cadGridCooler)"/>
+  <circle cx="700" cy="500" r="550" fill="url(#coolerGlow)"/>
+
+  <!-- Blueprint Title & Border -->
+  <rect x="30" y="30" width="1340" height="940" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="10 5" opacity="0.4"/>
+  <rect x="40" y="40" width="1320" height="920" fill="none" stroke="#1a355f" stroke-width="1"/>
+  
+  <!-- Header Block -->
+  <g transform="translate(60, 75)">
+    <rect x="0" y="0" width="490" height="70" rx="6" fill="#0b172a" stroke="#38bdf8" stroke-width="1.2" opacity="0.95"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#38bdf8" letter-spacing="2">VARDHMAN IRON PRODUCTS • BINA (M.P.)</text>
+    <text x="20" y="52" font-size="20" font-weight="900" fill="#ffffff">हेवी-ड्यूटी कूलर : 3D CAD EXPLODED VIEW</text>
+  </g>
+  
+  <g transform="translate(940, 75)">
+    <rect x="0" y="0" width="400" height="70" rx="6" fill="#0b172a" stroke="#1a355f" stroke-width="1.2"/>
+    <text x="20" y="28" font-size="12" fill="#8baac9">ENGINEERING SCHEMATIC : VIP-DC-18INCH</text>
+    <text x="20" y="50" font-size="15" font-weight="bold" fill="#38bdf8">GALVANIZED STEEL BODY • 100% COPPER</text>
+  </g>
+
+  <!-- Central Vertical Exploded Axis -->
+  <line x1="700" y1="140" x2="700" y2="880" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.6"/>
+
+  <!-- ================= PART 1: TOP GI CANOPY & WATER DISTRIBUTION TRAY ================= -->
+  <g transform="translate(700, 150)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Left -->
+    <path d="M -130 0 L -210 0 L -270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">1</text>
+    
+    <!-- Callout Box -->
+    <rect x="-600" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="-585" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Heavy GI Canopy &amp; Water Tray</text>
+    <text x="-585" y="11" font-size="11" fill="#38bdf8">गैल्वेनाइज्ड टॉप कैनोपी एवं 4-वे वाटर डिस्ट्रीब्यूटर ट्रे</text>
+
+    <!-- Component Render -->
+    <polygon points="-160,-15 160,-15 130,20 -130,20" fill="url(#giSheet)" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Water Tray Channels -->
+    <line x1="-120" y1="2" x2="120" y2="2" stroke="#0284c7" stroke-width="3" stroke-dasharray="6 4"/>
+    <circle cx="-100" cy="2" r="3" fill="#38bdf8"/>
+    <circle cx="0" cy="2" r="3" fill="#38bdf8"/>
+    <circle cx="100" cy="2" r="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- ================= PART 2: 4-CORNER STRUCTURAL STEEL PILLARS ================= -->
+  <g transform="translate(700, 245)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Right -->
+    <path d="M 125 0 L 210 0 L 270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">2</text>
+    
+    <!-- Callout Box -->
+    <rect x="300" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="315" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Reinforced Corner Pillars &amp; Frame</text>
+    <text x="315" y="11" font-size="11" fill="#8baac9">हेवी 20-गेज एंगल फ्रेम (कंपन-मुक्त संरचना)</text>
+
+    <!-- 4 Pillars Render -->
+    <rect x="-140" y="-18" width="16" height="36" fill="url(#giSheet)" stroke="#64748b" stroke-width="1"/>
+    <rect x="-90" y="-14" width="14" height="28" fill="#475569" stroke="#64748b" stroke-width="0.8"/>
+    <rect x="76" y="-14" width="14" height="28" fill="#475569" stroke="#64748b" stroke-width="0.8"/>
+    <rect x="124" y="-18" width="16" height="36" fill="url(#giSheet)" stroke="#64748b" stroke-width="1"/>
+    <!-- Connecting Cross Tie -->
+    <line x1="-124" y1="0" x2="124" y2="0" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- ================= PART 3: 100% COPPER WINDING HIGH-SPEED MOTOR ================= -->
+  <g transform="translate(700, 345)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Left -->
+    <path d="M -75 0 L -210 0 L -270 0" stroke="#f59e0b" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">3</text>
+    
+    <!-- Callout Box -->
+    <rect x="-600" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#f59e0b" stroke-width="1" opacity="0.95"/>
+    <text x="-585" y="-8" font-size="14" font-weight="bold" fill="#ffffff">100% Copper Dual Ball-Bearing Motor</text>
+    <text x="-585" y="11" font-size="11" fill="#f59e0b">110W - 1350 RPM हाई-स्पीड कॉपर कूलर मोटर</text>
+
+    <!-- Motor Render -->
+    <rect x="-65" y="-30" width="130" height="60" rx="8" fill="url(#copperWinding)" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="16" fill="#1e293b" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Shaft Extension -->
+    <rect x="-8" y="-45" width="16" height="15" fill="url(#giSheet)" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Capacitor -->
+    <rect x="42" y="-20" width="22" height="40" rx="4" fill="#0284c7" stroke="#ffffff" stroke-width="1"/>
+    <text x="53" y="4" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">4 µF</text>
+  </g>
+
+  <!-- ================= PART 4: 18-INCH AEROFOIL 3-BLADE FAN ================= -->
+  <g transform="translate(700, 455)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Right -->
+    <path d="M 90 0 L 210 0 L 270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">4</text>
+    
+    <!-- Callout Box -->
+    <rect x="300" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="315" y="-8" font-size="14" font-weight="bold" fill="#ffffff">18" Balanced Aerofoil 3-Blade Fan</text>
+    <text x="315" y="11" font-size="11" fill="#38bdf8">4500 CFM उच्च वायु प्रवाह एल्युमिनियम ब्लेड</text>
+
+    <!-- Fan Blades Render -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+    <circle cx="0" cy="0" r="22" fill="url(#coolerBlue)" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- 3 Blades -->
+    <path d="M 0 -18 C -25 -45 -15 -70 0 -72 C 15 -70 25 -45 0 -18 Z" fill="url(#giSheet)" stroke="#475569" stroke-width="1"/>
+    <path d="M 16 9 C 48 3 -3 65 62 36 C 62 18 38 12 16 9 Z" fill="url(#giSheet)" stroke="#475569" stroke-width="1" transform="rotate(120)"/>
+    <path d="M 16 9 C 48 3 -3 65 62 36 C 62 18 38 12 16 9 Z" fill="url(#giSheet)" stroke="#475569" stroke-width="1" transform="rotate(240)"/>
+    <circle cx="0" cy="0" r="7" fill="#f59e0b"/>
+  </g>
+
+  <!-- ================= PART 5: FRONT GRILL & MOTORIZED SWING LOUVERS ================= -->
+  <g transform="translate(700, 560)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Left -->
+    <path d="M -125 0 L -210 0 L -270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">5</text>
+    
+    <!-- Callout Box -->
+    <rect x="-600" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="-585" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Front Shroud &amp; Auto-Swing Louvers</text>
+    <text x="-585" y="11" font-size="11" fill="#38bdf8">चारों ओर हवा फेंकने वाली मोटरयुक्त स्विंग ग्रिल</text>
+
+    <!-- Front Grill Render -->
+    <rect x="-140" y="-30" width="280" height="60" rx="8" fill="url(#coolerBlue)" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="26" fill="#070d19" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Louvers lines -->
+    <line x1="-120" y1="-15" x2="-40" y2="-15" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="-120" y1="0" x2="-40" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="-120" y1="15" x2="-40" y2="15" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="40" y1="-15" x2="120" y2="-15" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="40" y1="0" x2="120" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="40" y1="15" x2="120" y2="15" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <!-- Control Knobs -->
+    <circle cx="-115" cy="-20" r="4" fill="#ffffff"/>
+    <circle cx="-95" cy="-20" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- ================= PART 6: 3-SIDE REMOVABLE LOUVERS WITH HONEYCOMB PADS ================= -->
+  <g transform="translate(700, 665)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Right -->
+    <path d="M 135 0 L 210 0 L 270 0" stroke="#f59e0b" stroke-width="1.2" fill="none"/>
+    <circle cx="270" cy="0" r="14" fill="#0b172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="270" y="5" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">6</text>
+    
+    <!-- Callout Box -->
+    <rect x="300" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#f59e0b" stroke-width="1" opacity="0.95"/>
+    <text x="315" y="-8" font-size="14" font-weight="bold" fill="#ffffff">3-Side Galvanized Louvers &amp; Pads</text>
+    <text x="315" y="11" font-size="11" fill="#f59e0b">उच्च घनत्व हनीकॉम्ब / खस पैड (शीतल वायु प्रवाह)</text>
+
+    <!-- Side Louvers & Honeycomb Render -->
+    <!-- Left Louver -->
+    <g transform="translate(-150, -25)">
+      <rect x="0" y="0" width="35" height="50" rx="3" fill="url(#giSheet)" stroke="#64748b" stroke-width="1"/>
+      <rect x="4" y="4" width="27" height="42" fill="url(#padHoney)"/>
+    </g>
+    <!-- Center Back Louver -->
+    <g transform="translate(-95, -25)">
+      <rect x="0" y="0" width="190" height="50" rx="3" fill="url(#giSheet)" stroke="#64748b" stroke-width="1"/>
+      <rect x="8" y="6" width="174" height="38" fill="url(#padHoney)"/>
+      <line x1="15" y1="15" x2="175" y2="15" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <line x1="15" y1="25" x2="175" y2="25" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <line x1="15" y1="35" x2="175" y2="35" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4 2"/>
+    </g>
+    <!-- Right Louver -->
+    <g transform="translate(115, -25)">
+      <rect x="0" y="0" width="35" height="50" rx="3" fill="url(#giSheet)" stroke="#64748b" stroke-width="1"/>
+      <rect x="4" y="4" width="27" height="42" fill="url(#padHoney)"/>
+    </g>
+  </g>
+
+  <!-- ================= PART 7: SUBMERSIBLE HIGH-LIFT WATER PUMP ================= -->
+  <g transform="translate(700, 750)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Left -->
+    <path d="M -50 0 L -210 0 L -270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">7</text>
+    
+    <!-- Callout Box -->
+    <rect x="-600" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="-585" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Submersible 18W High-Flow Pump</text>
+    <text x="-585" y="11" font-size="11" fill="#38bdf8">एंटी-क्लॉग वाटर पंप एवं मल्टी-वे पाइपिंग</text>
+
+    <!-- Pump Render -->
+    <rect x="-35" y="-18" width="70" height="36" rx="5" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M 0 -18 L 0 -35 L 20 -35" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="-15" cy="0" r="5" fill="#38bdf8"/>
+    <text x="5" y="4" font-size="9" fill="#38bdf8" font-weight="bold">18W PUMP</text>
+  </g>
+
+  <!-- ================= PART 8: DEEP GI SHEET BOTTOM WATER TANK ================= -->
+  <g transform="translate(700, 835)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Right -->
+    <path d="M 140 0 L 210 0 L 270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">8</text>
+    
+    <!-- Callout Box -->
+    <rect x="300" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="315" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Deep GI Sheet 90L Water Tank</text>
+    <text x="315" y="11" font-size="11" fill="#38bdf8">जंग-रोधी गैल्वेनाइज्ड वाटर टैंक (फ्लोट वाल्व सहित)</text>
+
+    <!-- Water Tank Render -->
+    <polygon points="-145,-25 145,-25 130,30 -130,30" fill="url(#giSheet)" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Water Level Window -->
+    <rect x="80" y="-12" width="18" height="30" rx="3" fill="#0284c7" fill-opacity="0.6" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Drain Plug & Float Valve -->
+    <circle cx="-100" cy="15" r="4" fill="#f59e0b"/>
+    <text x="0" y="10" font-size="11" fill="#070d19" font-weight="900" text-anchor="middle" letter-spacing="1">90 LITRES HEAVY TANK</text>
+  </g>
+
+  <!-- ================= PART 9: HEAVY TUBULAR STEEL TROLLEY WITH CASTOR WHEELS ================= -->
+  <g transform="translate(700, 910)" filter="url(#dropShadowCooler)">
+    <!-- Guide Line to Left -->
+    <path d="M -120 0 L -210 0 L -270 0" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+    <circle cx="-270" cy="0" r="14" fill="#0b172a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="-270" y="5" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">9</text>
+    
+    <!-- Callout Box -->
+    <rect x="-600" y="-26" width="310" height="52" rx="4" fill="#0e1e36" stroke="#38bdf8" stroke-width="1" opacity="0.95"/>
+    <text x="-585" y="-8" font-size="14" font-weight="bold" fill="#ffffff">Reinforced Heavy Load Steel Trolley</text>
+    <text x="-585" y="11" font-size="11" fill="#8baac9">मजबूत स्क्वायर पाइप ट्रॉली स्टैंड (पहियों सहित)</text>
+
+    <!-- Trolley Frame Render -->
+    <rect x="-135" y="-10" width="270" height="12" rx="2" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Wheels Left & Right -->
+    <g transform="translate(-115, 14)">
+      <circle cx="0" cy="0" r="12" fill="#0b172a" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="4" fill="#f59e0b"/>
+    </g>
+    <g transform="translate(115, 14)">
+      <circle cx="0" cy="0" r="12" fill="#0b172a" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="4" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <!-- Bottom Technical Stamp & Specs -->
+  <g transform="translate(60, 940)">
+    <rect x="0" y="0" width="460" height="30" rx="3" fill="#0b172a" stroke="#1a355f" stroke-width="1"/>
+    <text x="15" y="20" font-size="11" fill="#38bdf8">HEAVY 20/22 GAUGE GI SHEET • CORROSION-FREE RUST PROOF</text>
+  </g>
+  <g transform="translate(900, 940)">
+    <rect x="0" y="0" width="440" height="30" rx="3" fill="#0b172a" stroke="#1a355f" stroke-width="1"/>
+    <text x="15" y="20" font-size="11" fill="#f59e0b">MANUFACTURER DIRECT: +91 9425424932 (NAI BASTI, BINA)</text>
+  </g>
+</svg>
