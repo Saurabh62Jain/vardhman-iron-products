@@ -1,6 +1,7 @@
 # 🏭 वर्धमान आयरन प्रॉडक्ट्स (Vardhman Iron Products, Bina)
 
-[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://github.com)
+[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://saurabh62jain.github.io/vardhman-iron-products/)
+[![Experience](https://img.shields.io/badge/Heritage-45%2B%20Years-orange?style=for-the-badge)](https://saurabh62jain.github.io/vardhman-iron-products/)
 [![Direct Contact](https://img.shields.io/badge/WhatsApp-9425424932-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/919425424932)
 [![Location](https://img.shields.io/badge/Location-Bina%20(M.P.)-blue?style=for-the-badge&logo=google-maps)](https://goo.gl/maps)
 
@@ -12,6 +13,7 @@
 
 ## 🌟 प्रोजेक्ट की मुख्य विशेषताएं (Key Highlights)
 
+- 🏆 **45+ वर्षों का अटूट निर्माण अनुभव**: 45 से अधिक वर्षों की पीढ़ियों से चली आ रही प्रामाणिक फैब्रिकेशन गुणवत्ता और 15,000+ संतुष्ट ग्राहक परिवार।
 - 🔬 **3D CAD Exploded View & Assembly Engine**: आटा चक्की और शीट मेटल कूलर के 0% से 100% फैलाव वाले स्लाइडर से प्रत्येक कलपुर्जे की आंतरिक इंजीनियरिंग का 3D विज़ुअलाइज़र।
 - 🏷️ **आधिकारिक "वर्धमान" सुरक्षा स्टिकर**: हर उत्पाद पर असली निर्माता का गोल्डन-रेड स्टिकर और 3D होलोग्राम वेरिफिकेशन मॉडल।
 - 📸 **4K प्रोडक्ट कैटलॉग**: 
