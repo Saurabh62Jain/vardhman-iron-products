@@ -6,8 +6,8 @@
 // ================= DATA REPOSITORIES =================
 const assemblyData = {
   aataChakki: {
-    titleHi: "घरेलू आटा चक्की : पार्ट्स एवं असेंबली विवरण",
-    titleEn: "Domestic Flour Mill : Parts & Assembly Breakdown",
+    titleHi: "वर्धमान आटा चक्की : पार्ट्स एवं असेंबली विवरण",
+    titleEn: "Vardhman Aata Chakki : Parts & Assembly Breakdown",
     image: "images/aata_chakki_exploded_cad.svg",
     components: [
       {
@@ -448,7 +448,7 @@ function initQuoteCalculator() {
     if (product === 'chakki') {
       const motor = calcMotor.value;
       if (motor === '1hp') {
-        basePriceMin = 12500; basePriceMax = 15500; title = "वर्धमान घरेलू आटा चक्की 1 HP (10-12 kg/hr)";
+        basePriceMin = 12500; basePriceMax = 15500; title = "वर्धमान आटा चक्की 1 HP (10-12 kg/hr)";
       } else if (motor === '1.25hp') {
         basePriceMin = 15000; basePriceMax = 18000; title = "वर्धमान हैवी आटा चक्की 1.25 HP";
       } else {
